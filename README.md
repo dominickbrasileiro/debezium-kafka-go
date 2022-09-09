@@ -5,10 +5,10 @@ After a record is inserted or updated, a message is published on a topic, then h
 For example, imagine we have a table `public.billionaires`:
 
 | id | name         | net_worth |
-|----|--------------|--------:|
-| 1  | Elon Musk    | 262     |
-| 2  | Jeff Bezos   | 157     |
-| 3  | Gautam Adani | 143     |
+|----|--------------|----------:|
+| 1  | Elon Musk    | 262       |
+| 2  | Jeff Bezos   | 157       |
+| 3  | Gautam Adani | 143       |
 
 If we insert a record with the ID of `4`, a message would be published on the topic `postgres.public.billionaires`:
 ```json
@@ -18,8 +18,7 @@ If we insert a record with the ID of `4`, a message would be published on the to
     "id": 4,
     "name": "Bill Gates",
     "net_worth": 116
-  },
-  ...
+  }
 }
 ```
 
@@ -35,8 +34,7 @@ However, instead of inserting a new item, we update an existing record:
     "id": 4,
     "name": "Jeff Bezos",
     "net_worth": 180
-  },
-  ...
+  }
 }
 ```
 
@@ -64,4 +62,4 @@ $ go run cmd/main.go
 
 Made with ❤️ by Dominick Brasileiro 💎
 
-Feel free [to reach out!](https://www.linkedin.com/in/dominickbrasileiro/)!
+Feel free [to reach out](https://www.linkedin.com/in/dominickbrasileiro/)!
