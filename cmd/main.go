@@ -19,8 +19,7 @@ func init() {
 
 func main() {
 	topics := []string{
-		"postgres.public.product",
-		"postgres.public.student",
+		"postgres.public.billionaires",
 	}
 
 	logger := log.Default()
