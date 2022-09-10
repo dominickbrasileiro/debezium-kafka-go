@@ -1,6 +1,7 @@
 # Overview
-In this project, I'm using Debezium and Apache Kafka to observe the changes in a PostgreSQL database.
-After a record is inserted or updated, a message is published on a topic, then handled by one of the Go application's consumers.
+In this project, I'm using [Debezium](https://debezium.io/) and [Apache Kafka](https://kafka.apache.org/) to observe the
+changes in a [PostgreSQL](https://www.postgresql.org/) database. After a record is inserted or updated, a message is
+published on a topic, then handled by one of the Go application's consumers.
 
 For example, imagine we have a table `public.billionaires`:
 
@@ -52,7 +53,8 @@ CREATE TABLE billionaires (
 ```
 
 # How to set up
-You'll need Go, Docker and Docker Compose set up on your computer to run this project.
+You'll need [Go](https://go.dev/dl/), [Docker](https://docs.docker.com/engine/install/)
+and [Docker Compose](https://docs.docker.com/compose/install/) set up on your computer to run this project.
 ```sh
 $ docker compose up
 $ go run cmd/main.go
@@ -60,6 +62,8 @@ $ go run cmd/main.go
 
 ---
 
-Made with ❤️ by Dominick Brasileiro 💎
+Made with ❤️ by Dominick Brasileiro.
 
 Feel free [to reach out](https://www.linkedin.com/in/dominickbrasileiro/)!
+
+[![Linkedin Badge](https://img.shields.io/badge/-LinkedIn-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/dominickbrasileiro/)](https://www.linkedin.com/in/dominickbrasileiro/)
