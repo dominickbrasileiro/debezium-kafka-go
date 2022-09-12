@@ -50,6 +50,8 @@ CREATE TABLE billionaires (
   name      VARCHAR(255),
   net_worth NUMERIC
 );
+
+ALTER TABLE billionaires REPLICA IDENTITY FULL;
 ```
 
 # How to set up
