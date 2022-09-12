@@ -48,7 +48,7 @@ CREATE DATABASE debezium_test;
 CREATE TABLE billionaires (
   id        SERIAL PRIMARY KEY,
   name      VARCHAR(255),
-  net_worth NUMERIC
+  net_worth INTEGER
 );
 
 ALTER TABLE billionaires REPLICA IDENTITY FULL;
