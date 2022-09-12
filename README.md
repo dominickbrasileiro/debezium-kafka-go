@@ -46,9 +46,9 @@ CREATE DATABASE debezium_test;
 -- Connect to the database "debezium_test"
 
 CREATE TABLE billionaires (
-  'id'        SERIAL PRIMARY KEY,
-  'name'      VARCHAR(255),
-  'net_worth' NUMERIC
+  id        SERIAL PRIMARY KEY,
+  name      VARCHAR(255),
+  net_worth NUMERIC
 );
 ```
 
